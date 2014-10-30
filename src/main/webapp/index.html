@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Battle it out!</title>
+<script async type="application/dart" src="Client.dart"></script>
+<script async src="packages/browser/dart.js"></script>
+<link rel="stylesheet" href="c4client.css">
+</head>
+<body>
+<div id="container">
+      <img src="images/logo_large.png" alt="logo" style="float: left; width: 60px; height: 60px; margin-top: 20px">
+      <img src="images/c4web_banner.png" alt="banner">
+
+    <div id="toolbar">
+      <input  type="text" name="nickname" value="Player" id="nickname"/>
+      <input type="button" id="setnickname" value="Set Nickname">&nbsp;&nbsp;&nbsp;      
+      <img id="imgjoinc4" src="images/c4web_join.png" class="imgc4" alt="join">
+      <img id="imgstartc4" src="images/c4web_start.png" class="imgc4" alt="start">
+      <br>
+      <div id="playbar" style="width: 500px; height: 30px; margin-left: auto; margin-right: auto; margin-bottom: 10px; display: none;">
+          <div id="movetoken" style="width: 140px; float: left; font-size: 20pt; position: relative; top: 13px;">Select -></div>
+          <div id="playerimages" style="float: left;"></div>
+          <input type="button" id="quitgame" value="Quit Game" style="float:left;">
+      </div>
+    </div>
+
+ <div style="display: table; margin: auto;">
+  <div style="display: table-row;">
+    <div style="display: table-cell;"><canvas width="500" height="500" id="mainCanvas"></canvas></div>
+    <div id="chatcontainer">
+      <div id="scorebox">Score: No data yet!</div>
+      <div id="chatbox" class="chatbox">
+        <ul style="list-style: none; padding-left: 5px" id="output"></ul>
+      </div>
+      <input id="chatinput" name="chatinput" type="text">
+     </div>
+     </div>
+     </div>
+</div>
+<div id="msgbox" >
+Game finished<br><br>
+<span id="msgboxmsg"></span><br><br>
+<input type="button" id="msgboxok" value="Play Again!">
+<input type="button" id="msgboxno" value="Quit Game">
+</div>
+</body>
+</html>

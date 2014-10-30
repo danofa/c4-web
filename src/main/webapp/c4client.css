@@ -1,0 +1,177 @@
+
+body {
+  background-color: #bdbdbd;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.2em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+#chatinput {
+   width: 300px; 
+   border: 2px solid red;
+}
+
+input#chatinput, #nickname {
+  padding: 0;
+  border: 2px solid black;
+  border-radius: 4px;
+  height: 40px;
+  box-shadow: 5px 5px 5px #888888;
+  font-size: 14pt;
+}
+
+#msgbox {
+  position: fixed;
+  display: none; 
+  padding: 15px;
+  width: 240px;
+  height: 100px;
+  margin-left: -150px;
+  box-shadow: 5px 5px 5px #888888;
+  border: 2px solid black;
+  background: #FF63F2;
+  top: 50px;
+  left: 50%;
+  vertical-align: bottom;
+  text-align: center;
+  font-size: 14pt;
+}
+
+#container {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid black;
+  box-shadow: 5px 5px 5px #888888;
+  width: 700px;
+  height: 100%;
+  padding: 20px;
+  padding-top: 0;
+  background: #cccccc;
+  border-radius: 10px;
+}
+
+#toolbar {
+  text-align: center;  
+}
+input[type=button] {
+  border-radius: 4px;
+  height: 40px;
+  box-shadow: 5px 5px 5px #888888;
+  font-size: 12pt;
+  font-style: bold;
+}
+input[type=button]:ACTIVE {
+  border-radius: 4px;
+  height: 40px;
+  box-shadow: 0px 0px 0px #888888;
+  font-size: 12pt;
+  font-style: bold;
+}
+#setnickname {
+  position: relative;
+  top: -10px;
+  width: 120px;
+}
+
+#nickname {
+  position: relative;
+  top: -9px;
+  width: 120px;
+  height: 34px
+}
+
+.playerselectbutton {
+  display: inline-block;
+  background: buttonface;
+  margin: 3px;
+  box-shadow:5px 5px 5px #888888;
+  border: 1px outset buttonshadow;
+}
+
+.c4 {
+  position: fixed;
+  padding: 10px;
+  display: none;
+  border: 1px solid black; 
+  background: #eeeeee; 
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px #888888;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+}
+
+.imgc4 {
+  border: 2px outset buttonshadow;
+  padding: 1px;
+  background: buttonface;
+  position: relative;
+  top: 5px;
+  border-radius: 4px;
+  box-shadow: 5px 5px 5px #888888;
+  font-size: 12pt;
+  font-style: bold;
+}
+
+.imgc4:ACTIVE {
+  box-shadow: 0px 0px 0px #888888;
+}
+
+
+ #movetoken {
+  animation: textanim 3s;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+ }
+
+@keyframes textanim {
+    from {opacity: 0; }
+    to {opacity; 100;}
+}
+
+
+#mainCanvas {
+  border: none;
+  float: right;
+  }
+
+#chatcontainer {
+  display: table-cell;
+  width: 300px; 
+  height: 440px;
+  float: left;
+}
+
+#scorebox {
+  padding-top: 5px;
+  padding-left: 5px;
+   background: #FF63F2;
+   width: 295px; 
+   height: 20px; 
+   color: black; 
+   border: 2px solid black; 
+   box-shadow: 5px 5px 5px #888888;
+   text-align: left;
+   border-radius: 4px;
+   font-size: 12pt;
+}
+
+#chatbox {
+  white-space: pre-wrap;      /* CSS3 */   
+   white-space: -moz-pre-wrap; /* Firefox */    
+   white-space: -pre-wrap;     /* Opera <7 */   
+   white-space: -o-pre-wrap;   /* Opera 7 */    
+   word-wrap: break-word;      /* IE */
+   background: #A8F4FF;
+   width: 300px; 
+   height: 400px; 
+   color: black; 
+   border: 2px solid black; 
+   overflow: auto;
+   box-shadow: 5px 5px 5px #888888;
+   text-align: left;
+}
